@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="High Life Jackets collection banner">
+  <defs>
+    <linearGradient id="c2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#33251c"/>
+      <stop offset="100%" stop-color="#0b0908"/>
+    </linearGradient>
+    <pattern id="d2" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2" fill="#e2543c" opacity="0.24"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="1200" fill="url(#c2)"/>
+  <rect width="900" height="1200" fill="url(#d2)"/>
+  <g opacity="0.3">
+    <path d="M180 1200 900 380 900 560 340 1200Z" fill="#5c2b22"/>
+  </g>
+  <g opacity="0.85">
+    <rect x="0" y="880" width="900" height="6" fill="#e2543c"/>
+  </g>
+  <g font-family="Arial Black, Arial, sans-serif" fill="#f7b32b" opacity="0.16" font-size="104" letter-spacing="8">
+    <text x="60" y="360">HIGH</text>
+    <text x="60" y="470">LIFE</text>
+  </g>
+</svg>

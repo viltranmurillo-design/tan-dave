@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Hustle District boxy tee">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#232619"/>
+      <stop offset="100%" stop-color="#0d0f0b"/>
+    </linearGradient>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#f7b32b" opacity="0.16"/>
+    </pattern>
+    <linearGradient id="cloth" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="#6d7350"/>
+      <stop offset="55%" stop-color="#525737"/>
+      <stop offset="100%" stop-color="#363a24"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <rect width="800" height="800" fill="url(#dots)"/>
+  <circle cx="620" cy="640" r="190" fill="#f7b32b" opacity="0.07"/>
+
+  <g stroke="#8d936d" stroke-width="4" stroke-linejoin="round">
+    <path fill="url(#cloth)" d="M330 168C320 168 300 174 286 186L214 236 166 300 244 356 288 300 288 656Q288 690 322 690L478 690Q512 690 512 656L512 300 556 356 634 300 586 236 514 186C500 174 480 168 470 168C462 206 338 206 330 168Z"/>
+  </g>
+
+  <path d="M330 168C338 206 462 206 470 168" fill="none" stroke="#a7ad86" stroke-width="9" stroke-linecap="round"/>
+  <path d="M288 300 288 656Q288 690 322 690L478 690Q512 690 512 656L512 300" fill="none" stroke="#a7ad86" stroke-width="3" opacity="0.7"/>
+  <path d="M176 296 250 344M624 296 550 344" stroke="#a7ad86" stroke-width="3" opacity="0.6"/>
+  <path d="M288 652 512 652" stroke="#a7ad86" stroke-width="3" opacity="0.5"/>
+
+  <g>
+    <path d="M300 306h200v112H300z" fill="none" stroke="#14161b" stroke-width="4"/>
+    <text x="400" y="356" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="32" fill="#14161b" letter-spacing="3">HUSTLE</text>
+    <text x="400" y="394" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="26" fill="#14161b" letter-spacing="4">DISTRICT</text>
+  </g>
+
+  <g fill="#f7b32b" opacity="0.9">
+    <rect x="300" y="446" width="16" height="16"/>
+    <rect x="326" y="446" width="16" height="16"/>
+    <rect x="352" y="446" width="16" height="16"/>
+    <rect x="378" y="446" width="16" height="16"/>
+    <rect x="404" y="446" width="16" height="16"/>
+    <rect x="430" y="446" width="16" height="16"/>
+    <rect x="456" y="446" width="16" height="16"/>
+    <rect x="482" y="446" width="16" height="16"/>
+  </g>
+
+  <g>
+    <rect x="296" y="668" width="34" height="14" rx="3" fill="#f7b32b" opacity="0.85"/>
+    <text x="400" y="660" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#a7ad86" letter-spacing="3">220 GSM</text>
+  </g>
+</svg>

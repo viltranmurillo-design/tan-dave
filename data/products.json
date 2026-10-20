@@ -1,0 +1,112 @@
+[
+  {
+    "id": "bnk-tee-01",
+    "name": "Solid Movement Oversized Tee",
+    "category": "graphic-tees",
+    "price": 899,
+    "description": "Heavyweight oversized tee with a bold Solid Movement front print and a woven hem tag.",
+    "image": "images/tee-solid-movement.svg",
+    "sizes": { "S": 12, "M": 20, "L": 18, "XL": 9, "XXL": 4 },
+    "featured": true,
+    "topSeller": true
+  },
+  {
+    "id": "bnk-tee-02",
+    "name": "High Life Statement Shirt",
+    "category": "graphic-tees",
+    "price": 1099,
+    "description": "Drop-shoulder statement shirt in washed bone cotton, screen printed front and back panels.",
+    "image": "images/tee-high-life.svg",
+    "sizes": { "S": 8, "M": 14, "L": 12, "XL": 7, "XXL": 3 },
+    "featured": true,
+    "topSeller": false
+  },
+  {
+    "id": "bnk-tee-03",
+    "name": "Hustle District Boxy Tee",
+    "category": "graphic-tees",
+    "price": 849,
+    "description": "Boxy fit street tee in washed olive with a high-density hustle graphic and reinforced hem.",
+    "image": "images/tee-hustle-district.svg",
+    "sizes": { "S": 6, "M": 11, "L": 15, "XL": 11, "XXL": 6 },
+    "featured": false,
+    "topSeller": true
+  },
+  {
+    "id": "bnk-ood-01",
+    "name": "Solid Movement Heavyweight Hoodie",
+    "category": "hoodies-outerwear",
+    "price": 1899,
+    "description": "Heavyweight fleece hoodie with double-lined hood, metal eyelets, custom drawstrings and kangaroo pocket.",
+    "image": "images/hoodie-solid-movement.svg",
+    "sizes": { "S": 5, "M": 9, "L": 10, "XL": 6, "XXL": 2 },
+    "featured": true,
+    "topSeller": true
+  },
+  {
+    "id": "bnk-ood-02",
+    "name": "Koykoy Varsity Bomber Jacket",
+    "category": "hoodies-outerwear",
+    "price": 2799,
+    "description": "Varsity bomber with contrast sleeve panels, chenille patch and a quilted high-life lining.",
+    "image": "images/jacket-varsity.svg",
+    "sizes": { "S": 3, "M": 5, "L": 6, "XL": 4, "XXL": 2 },
+    "featured": true,
+    "topSeller": false
+  },
+  {
+    "id": "bnk-ood-03",
+    "name": "Night Shift Zip Hoodie",
+    "category": "hoodies-outerwear",
+    "price": 2199,
+    "description": "Full-zip street hoodie with drop shoulders, heavy metal puller and side seam pockets.",
+    "image": "images/hoodie-night-shift.svg",
+    "sizes": { "S": 0, "M": 0, "L": 2, "XL": 3, "XXL": 1 },
+    "featured": false,
+    "topSeller": false
+  },
+  {
+    "id": "bnk-ood-04",
+    "name": "Koykoy Varsity Vest",
+    "category": "hoodies-outerwear",
+    "price": 1599,
+    "description": "Sleeveless varsity vest in heavy twill with contrast trim and a woven back patch.",
+    "image": "images/jacket-varsity.svg",
+    "sizes": { "S": 0, "M": 0, "L": 0, "XL": 0, "XXL": 0 },
+    "featured": false,
+    "topSeller": false
+  },
+  {
+    "id": "bnk-acc-01",
+    "name": "Daily Grind 3D Embroidered Cap",
+    "category": "caps-accessories",
+    "price": 549,
+    "description": "Six-panel cap with high-definition 3D embroidered logo, adjustable snapback and moisture-wicking band.",
+    "image": "images/cap-daily-grind.svg",
+    "sizes": { "OS": 18 },
+    "featured": true,
+    "topSeller": true
+  },
+  {
+    "id": "bnk-acc-02",
+    "name": "Koykoy Strapback Cap",
+    "category": "caps-accessories",
+    "price": 599,
+    "description": "Acrylic/cotton blend strapback with 3D embroidery, brass strap buckle and sweat-wicking inner band.",
+    "image": "images/cap-koykoy.svg",
+    "sizes": { "OS": 7 },
+    "featured": false,
+    "topSeller": false
+  },
+  {
+    "id": "bnk-acc-03",
+    "name": "Solid Movement Beanie",
+    "category": "caps-accessories",
+    "price": 399,
+    "description": "Ribbed knit beanie with woven brand tag and moisture-wicking inner band for cold early shifts.",
+    "image": "images/beanie-solid-movement.svg",
+    "sizes": { "OS": 22 },
+    "featured": false,
+    "topSeller": false
+  }
+]

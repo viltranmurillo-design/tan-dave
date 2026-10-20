@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Shop the Bugoy na Koykoy Apparel catalogue — graphic tees, hoodies and outerwear, caps and accessories with full material, fit and detail specifications."
+    />
+    <title>Shop All – Bugoy na Koykoy Apparel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="topbar">Solid Movement &nbsp;·&nbsp; High Life Style</div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">
+          <span class="logo-mark" aria-hidden="true">BNK</span>
+          <span>
+            Bugoy na Koykoy
+            <small>Apparel &amp; Streetwear</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="navList"
+          aria-label="Toggle navigation"
+        >
+          <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+          Menu
+        </button>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <ul class="nav-list" id="navList">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li>
+              <a class="nav-link" href="products.html?cat=graphic-tees">Graphic Tees</a>
+            </li>
+            <li>
+              <a class="nav-link" href="products.html?cat=hoodies-outerwear">Hoodies &amp; Outerwear</a>
+            </li>
+            <li>
+              <a class="nav-link" href="products.html?cat=caps-accessories">Caps &amp; Accessories</a>
+            </li>
+            <li><a class="nav-link" href="products.html">Shop All</a></li>
+            <li><a class="nav-link" href="admin.html">Admin</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="cart-btn" type="button" data-open-cart>
+            Cart <span class="cart-count" data-cart-count>0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-head">
+        <div class="container">
+          <p class="eyebrow" id="catalogueEyebrow">The Catalogue</p>
+          <h1 id="catalogueTitle">Shop All Products</h1>
+          <p class="lede" id="catalogueLede">
+            Every item ships with the full Bugoy na Koykoy specification sheet —
+            material, fit and construction details.
+          </p>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="catalog-layout">
+          <!-- ------------------------- FILTERS ------------------------- -->
+          <aside class="filters" aria-label="Product filters">
+            <div>
+              <h4>Search</h4>
+              <div class="search-row">
+                <input
+                  class="input"
+                  id="searchInput"
+                  type="search"
+                  placeholder="Search item name…"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h4>Category</h4>
+              <div class="filter-options" id="categoryFilters"></div>
+            </div>
+
+            <div class="filter-group">
+              <h4>Available Size</h4>
+              <div class="filter-options" id="sizeFilters"></div>
+            </div>
+
+            <div class="filter-group">
+              <h4>Availability</h4>
+              <div class="filter-options" id="availabilityFilters"></div>
+            </div>
+
+            <div class="filter-group">
+              <h4>Price Range (PHP)</h4>
+              <div class="search-row">
+                <input
+                  class="input"
+                  id="minPrice"
+                  type="number"
+                  min="0"
+                  step="50"
+                  placeholder="Min"
+                />
+                <input
+                  class="input"
+                  id="maxPrice"
+                  type="number"
+                  min="0"
+                  step="50"
+                  placeholder="Max"
+                />
+              </div>
+            </div>
+
+            <button class="btn secondary" type="button" id="resetFilters">
+              Reset Filters
+            </button>
+          </aside>
+
+          <!-- -------------------------- RESULTS ------------------------ -->
+          <div>
+            <div class="result-bar">
+              <div class="meta" id="filterMeta" aria-live="polite">0 item(s)</div>
+              <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                <label class="meta" for="sortSelect">Sort</label>
+                <select class="select" id="sortSelect" style="width: auto;">
+                  <option value="featured">Featured first</option>
+                  <option value="best">Top sellers</option>
+                  <option value="price-asc">Price: low to high</option>
+                  <option value="price-desc">Price: high to low</option>
+                  <option value="name">Name: A to Z</option>
+                  <option value="stock">Stock: most available</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid" id="productsGrid"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tight container" id="contact">
+        <header class="section-header">
+          <div>
+            <p class="eyebrow">Need A Hand?</p>
+            <h2 class="section-title">Sizing, Restocks, Group Orders</h2>
+          </div>
+          <div class="contact-line">
+            <div>EMAIL: <a href="mailto:viltran_murillo@sjp2cd.edu.ph">viltran_murillo@sjp2cd.edu.ph</a></div>
+            <div>PHONE NUMBER: <a href="tel:09129872527">09129872527</a></div>
+          </div>
+        </header>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="logo" href="index.html">
+              <span class="logo-mark" aria-hidden="true">BNK</span>
+              <span>
+                Bugoy na Koykoy
+                <small>Solid Movement, High Life Style</small>
+              </span>
+            </a>
+            <p>
+              Street culture and lifestyle apparel built on heavyweight fabric,
+              reinforced stitching and prints that land.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="footer-title">Shop</h3>
+            <ul class="footer-list">
+              <li><a href="products.html?cat=graphic-tees">Graphic Tees</a></li>
+              <li><a href="products.html?cat=hoodies-outerwear">Hoodies &amp; Outerwear</a></li>
+              <li><a href="products.html?cat=caps-accessories">Caps &amp; Accessories</a></li>
+              <li><a href="products.html">All Products</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-title">Brand</h3>
+            <ul class="footer-list">
+              <li><a href="index.html#collections">Collections</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="admin.html">Admin Dashboard</a></li>
+              <li><a href="products.html">Size Guide</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-title">Contact</h3>
+            <div class="contact-line">
+              <div>EMAIL: <a href="mailto:viltran_murillo@sjp2cd.edu.ph">viltran_murillo@sjp2cd.edu.ph</a></div>
+              <div>PHONE NUMBER: <a href="tel:09129872527">09129872527</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>&copy; <span id="currentYear">2026</span> Bugoy na Koykoy Apparel. All rights reserved.</span>
+          <span>Solid Movement, High Life Style</span>
+        </div>
+        <p class="notice-strip">
+          Images and background banners are loaded strictly from the
+          <strong>images</strong> and <strong>background</strong> folders.
+        </p>
+      </div>
+    </footer>
+
+    <!-- ========================= CART DRAWER ======================== -->
+    <div class="drawer" id="cartDrawer" hidden>
+      <button class="drawer-scrim" type="button" data-close-cart aria-label="Close cart"></button>
+      <aside class="drawer-panel" role="dialog" aria-modal="true" aria-label="Shopping cart">
+        <div class="drawer-head">
+          <h3>Your Cart</h3>
+          <button class="modal-close" type="button" data-close-cart aria-label="Close cart">&#10005;</button>
+        </div>
+        <div class="drawer-body" id="cartLines"></div>
+        <div class="drawer-foot">
+          <div class="total-row"><span>Subtotal</span><span id="cartTotal">₱0</span></div>
+          <button class="btn" type="button" id="checkoutBtn">Checkout</button>
+          <button class="btn ghost" type="button" data-close-cart>Keep Shopping</button>
+        </div>
+      </aside>
+    </div>
+
+    <div class="toast-wrap" id="toastWrap"></div>
+
+    <script src="js/app.js"></script>
+    <script src="js/products.js"></script>
+  </body>
+</html>
