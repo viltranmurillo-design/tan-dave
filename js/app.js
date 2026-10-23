@@ -6,6 +6,17 @@
 
 var BNK_STORE_KEY = "bnk_products_v1";
 var BNK_CART_KEY = "bnk_cart_v1";
+var BNK_USERS_KEY = "bnk_users_v1";
+var BNK_SESSION_KEY = "bnk_session_v1";
+var BNK_ORDERS_KEY = "bnk_orders_v1";
+
+/* ---------- Brand contact ---------- */
+var BNK_CONTACT = {
+  email: "viltran_murillo@sjp2cd.edu.ph",
+  mobile: "09129872527",
+  landline: "(02) 8123-4567",
+  hours: "Mon–Sat, 9:00 AM – 6:00 PM"
+};
 
 /* ---------- Categories & specifications ---------- */
 var BNK_CATEGORIES = [
@@ -876,6 +887,14 @@ function initCart() {
     checkout.addEventListener("click", function () {
       var count = cartCount();
       if (!count) return;
+      var cart = getCart();
+      var order = { id: uid("order"), date: new Date().toISOString(), items: cart.slice(), total: cartSubtotal() };
+      try {
+        var orders = JSON.parse(window.localStorage.getItem(BNK_ORDERS_KEY) || "[]");
+        if (!Array.isArray(orders)) orders = [];
+        orders.push(order);
+        window.localStorage.setItem(BNK_ORDERS_KEY, JSON.stringify(orders));
+      } catch (e) {}
       notify(
         "Order noted: " +
           count +
